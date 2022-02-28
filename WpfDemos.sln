@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Svg2Path", "Svg2Path\Svg2Path.csproj", "{2C1F0020-0CC0-4486-A84C-12FB6824AC3C}"
 EndProject
@@ -10,6 +10,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlendDrawings", "BlendDrawings\BlendDrawings.csproj", "{11723A11-2420-49D6-B953-F12ABC355D3F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PythonPdb", "PythonPdb\PythonPdb.csproj", "{10874544-E7D4-4EF2-941C-109806F07735}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowInstalledSoftware", "ShowInstalledSoftware\ShowInstalledSoftware.csproj", "{4D7E4FD5-20D2-43E3-B79E-B0D6549894D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerializeCompare", "SerializeCompare\SerializeCompare.csproj", "{00116491-05B5-476F-B1FA-C65326B724ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetLayOutClipTest", "GetLayOutClipTest\GetLayOutClipTest.csproj", "{3E50CFE9-A2B4-4763-992A-836530C0A2CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{10874544-E7D4-4EF2-941C-109806F07735}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10874544-E7D4-4EF2-941C-109806F07735}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10874544-E7D4-4EF2-941C-109806F07735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D7E4FD5-20D2-43E3-B79E-B0D6549894D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7E4FD5-20D2-43E3-B79E-B0D6549894D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7E4FD5-20D2-43E3-B79E-B0D6549894D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7E4FD5-20D2-43E3-B79E-B0D6549894D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00116491-05B5-476F-B1FA-C65326B724ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00116491-05B5-476F-B1FA-C65326B724ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00116491-05B5-476F-B1FA-C65326B724ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00116491-05B5-476F-B1FA-C65326B724ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E50CFE9-A2B4-4763-992A-836530C0A2CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E50CFE9-A2B4-4763-992A-836530C0A2CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E50CFE9-A2B4-4763-992A-836530C0A2CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E50CFE9-A2B4-4763-992A-836530C0A2CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
