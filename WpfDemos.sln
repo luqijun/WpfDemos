@@ -25,7 +25,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingGMap", "UsingGMap\Usin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingReactive", "UsingReactive\UsingReactive.csproj", "{1601B5DE-FCD6-4806-87C6-A0FD7DDA5BEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCommands", "UsingCommands\UsingCommands.csproj", "{2736D793-C15E-412E-8329-C0F36F41049B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingCommands", "UsingCommands\UsingCommands.csproj", "{2736D793-C15E-412E-8329-C0F36F41049B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingEvents", "UsingEvents\UsingEvents.csproj", "{79308795-AA7A-4ACB-90CF-23A6CCDCBA0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{2736D793-C15E-412E-8329-C0F36F41049B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2736D793-C15E-412E-8329-C0F36F41049B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2736D793-C15E-412E-8329-C0F36F41049B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79308795-AA7A-4ACB-90CF-23A6CCDCBA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79308795-AA7A-4ACB-90CF-23A6CCDCBA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79308795-AA7A-4ACB-90CF-23A6CCDCBA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79308795-AA7A-4ACB-90CF-23A6CCDCBA0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
