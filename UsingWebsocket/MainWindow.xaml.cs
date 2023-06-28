@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Mime;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -100,6 +102,32 @@ namespace UsingWebsocket
             else
             {
                 LogHelper.Info("Error uploading image.");
+            }
+        }
+
+        private async void btnGetQRCode_Click(object sender, RoutedEventArgs e)
+        {
+            using (var client = new HttpClient())
+            {
+                var result = await client.GetStringAsync("http://172.30.83.53:5000/artwork/qrcode/1");
+                var jsonObj = Newtonsoft.Json.Linq.JObject.Parse(result);
+                string base64Image = jsonObj["data"]["qr_image"].ToString();
+
+                byte[] imageBytes = Convert.FromBase64String(base64Image);
+                using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+                {
+                    // 使用 BitmapImage 类将图像数据加载到 Image 控件中
+                    BitmapImage image = new BitmapImage();
+                    image.BeginInit();
+                    image.StreamSource = ms;
+                    image.CacheOption = BitmapCacheOption.OnLoad;
+                    image.EndInit();
+
+                    // 将 Image 控件添加到 UI 中
+                    this.imgQRCode.Source = image;
+                }
+
+                LogHelper.Info(result);
             }
         }
     }
