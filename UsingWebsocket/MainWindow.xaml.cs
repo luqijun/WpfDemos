@@ -28,11 +28,13 @@ namespace UsingWebsocket
     {
         ISocketClient _client;
 
+        const string HOST = "http://www.ask4kid.com:6790"; // "http://172.30.83.53:5000";
+
         public MainWindow()
         {
             InitializeComponent();
 
-            this.tbxUrl.Text = "http://172.30.83.53:5000/tsm"; // "http://172.30.83.53:5055/dcenter";
+            this.tbxUrl.Text = $"{HOST}/tsm"; // $"{HOST}/dcenter";
             LogHelper.SetLogHandler(this.Log);
         }
 
@@ -91,7 +93,7 @@ namespace UsingWebsocket
             content.Add(new StreamContent(new MemoryStream(File.ReadAllBytes(this.tbxInputFile.Text))), "file", filename);
 
             // Call the PostAsync() method on the HttpClient object and pass the FormUrlEncodedContent object as a parameter.
-            HttpResponseMessage response = await client.PostAsync("http://172.30.83.53:5000/artwork/upload", content);
+            HttpResponseMessage response = await client.PostAsync($"{HOST}/artwork/upload", content);
 
             // Get the response from the PostAsync() method and check the status code.
             int statusCode = (int)response.StatusCode;
@@ -109,7 +111,7 @@ namespace UsingWebsocket
         {
             using (var client = new HttpClient())
             {
-                var result = await client.GetStringAsync("http://172.30.83.53:5000/artwork/qrcode/1");
+                var result = await client.GetStringAsync($"{HOST}/artwork/qrcode/1");
                 var jsonObj = Newtonsoft.Json.Linq.JObject.Parse(result);
                 string base64Image = jsonObj["data"]["qr_image"].ToString();
 
