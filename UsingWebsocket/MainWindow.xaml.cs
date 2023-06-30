@@ -111,7 +111,7 @@ namespace UsingWebsocket
         {
             using (var client = new HttpClient())
             {
-                var result = await client.GetStringAsync($"{HOST}/artwork/qrcode/1");
+                var result = await client.GetStringAsync($"{HOST}/artwork/qrcode/{this.tbxArtworkID.Text.Trim()}");
                 var jsonObj = Newtonsoft.Json.Linq.JObject.Parse(result);
                 string base64Image = jsonObj["data"]["qr_image"].ToString();
 
