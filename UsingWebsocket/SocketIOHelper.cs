@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace UsingWebsocket
@@ -29,7 +30,9 @@ namespace UsingWebsocket
             {
                 // You can print the returned data first to decide what to do next.
                 // output: ["ok",{"id":1,"name":"tom"}]
-                LogHelper.Info(response?.ToString());
+
+                var decodedString = Regex.Unescape(response?.ToString());
+                LogHelper.Info(decodedString);
 
                 // Get the first data in the response
                 //string text = response.GetValue<string>();
@@ -42,7 +45,8 @@ namespace UsingWebsocket
 
             client.On("artwork_update", response =>
             {
-                LogHelper.Info(response?.ToString());
+                var decodedString = Regex.Unescape(response?.ToString());
+                LogHelper.Info(decodedString);
             });
 
 
