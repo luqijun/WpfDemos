@@ -23,7 +23,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingMapControl", "UsingMap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingGMap", "UsingGMap\UsingGMap.csproj", "{500F1374-035B-490C-83F7-0D4F7DCCF8D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingReactive", "UsingReactive\UsingReactive.csproj", "{1601B5DE-FCD6-4806-87C6-A0FD7DDA5BEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingReactive", "UsingReactive\UsingReactive.csproj", "{1601B5DE-FCD6-4806-87C6-A0FD7DDA5BEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadVideos", "ReadVideos\ReadVideos.csproj", "{EBDD5E2A-2DA5-4DDC-905E-68181E19A28C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadVideos_OpenCVSharp", "ReadVideos_OpenCVSharp\ReadVideos_OpenCVSharp.csproj", "{0168FE3A-05C3-429A-9390-3E4F15DCFD32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{1601B5DE-FCD6-4806-87C6-A0FD7DDA5BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1601B5DE-FCD6-4806-87C6-A0FD7DDA5BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1601B5DE-FCD6-4806-87C6-A0FD7DDA5BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDD5E2A-2DA5-4DDC-905E-68181E19A28C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDD5E2A-2DA5-4DDC-905E-68181E19A28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDD5E2A-2DA5-4DDC-905E-68181E19A28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDD5E2A-2DA5-4DDC-905E-68181E19A28C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0168FE3A-05C3-429A-9390-3E4F15DCFD32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0168FE3A-05C3-429A-9390-3E4F15DCFD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0168FE3A-05C3-429A-9390-3E4F15DCFD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0168FE3A-05C3-429A-9390-3E4F15DCFD32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
