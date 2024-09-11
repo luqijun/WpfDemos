@@ -1,0 +1,15 @@
+﻿<Window x:Class="UsingCommands.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UsingCommands"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <Button Content="关闭" Width="100" Height="40" Command="{x:Static ApplicationCommands.Close}" Margin="10"/>
+            <Button Content="显示Demo" Width="100" Height="40" Click="Button_Click" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
